@@ -2,11 +2,11 @@
 
 # Set this to the root of your project when deployed:
 http_path = ""
-css_dir = "assets/css"
-sass_dir = "assets/sass"
-fonts_dir = "assets/fonts"
-images_dir = "assets/img"
-javascripts_dir = "assets/js"
+css_dir = "css"
+sass_dir = "sass"
+fonts_dir = "fonts"
+images_dir = "img"
+javascripts_dir = "js"
 output_style = :compact
 require "susy"
 
