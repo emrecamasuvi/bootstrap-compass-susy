@@ -176,29 +176,6 @@ table {
 }
 
 
-// TABLE CELL SIZING
-// -----------------
-
-// Reset default grid behavior
-table td[class*="span"],
-table th[class*="span"],
-.row-fluid table td[class*="span"],
-.row-fluid table th[class*="span"] {
-  display: table-cell;
-  float: none; // undo default grid column styles
-  margin-left: 0; // undo default grid column styles
-}
-
-// Change the column widths to account for td/th padding
-.table td,
-.table th {
-  @for $i from 1 through 12 {
-    &.span#{$i} { @include tableColumns($i); }
-  }
-}
-
-
-
 // TABLE BACKGROUNDS
 // -----------------
 // Exact selectors below required to override .table-striped

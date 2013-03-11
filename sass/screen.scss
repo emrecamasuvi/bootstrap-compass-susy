@@ -3,6 +3,9 @@
 // responsive calisacaksiniz, o dosyayi da duzenlemeniz gerek
 @import "base";
 
+.cf:before, .cf:after {content: " "; display: table;}
+.cf:after {clear: both;}
+
 .corset {
 	#Header &,
 	#Nav &,

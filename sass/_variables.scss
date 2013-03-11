@@ -12,16 +12,19 @@ $whiteDarker:						#f4f4f4 !default;
 $whiteDark:							#f0f0f0 !default;
 $white:                 #fff !default;
 
-// Ara renkler
+// Accent colors
 $blue:                  #7F9EC5 !default;
 $blueDark:              #313f5e !default;
-
 $orange:                #ef7f25 !default;
 $green:                 #46a546 !default;
 $red:                   #9d261d !default;
 $yellow:                #ffc40d !default;
 $pink:                  #c3325f !default;
 $purple:                #7a43b6 !default;
+
+// custom variables
+// -------------------------
+$stickyfooterheight: 480px !default;
 
 // Scaffolding
 // -------------------------
@@ -46,11 +49,12 @@ $linkColorHover:        darken($linkColor, 15) !default;
 
 
 // custom font varsa bu alani duzenleyiniz
-@include font-face("PTSansRegular", inline-font-files("pts55f-webfont.woff", woff), "pts55f-webfont.eot", normal, normal);
+@include font-face("MuseoSansLight", inline-font-files("museosans-100-webfont.woff", woff), "museosans-100-webfont.eot", normal, normal);
+@include font-face("MuseoSansBold", inline-font-files("museosans_500-webfont.woff", woff), "museosans_500-webfont.eot", normal, normal);
 
 // Tipografi
 $sansFontFamily:        "PTSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$serifFontFamily:       Cambria, Georgia, "Times New Roman", Times, serif !default;
+$serifFontFamily:       "MuseoSansBold", Cambria, Georgia, serif !default;
 $monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace !default;
 
 $baseFontSize:          14px !default;
@@ -238,6 +242,3 @@ $popoverTitleBackground:  darken($popoverBackground, 3%) !default;
 // Special enhancement for popovers
 $popoverArrowOuterWidth:  $popoverArrowWidth + 1 !default;
 $popoverArrowOuterColor:  rgba(0,0,0,.25) !default;
-// Fluid grid
-$fluidGridColumnWidth:    4.3% !default;
-$fluidGridGutterWidth:    4.4% !default;
